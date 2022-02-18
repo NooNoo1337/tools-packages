@@ -22,3 +22,21 @@ npm install --save-dev prettier
 ```text
 "format": "prettier --write ."
 ```
+
+## ESLint
+
+```bash
+# Установим eslint пакет в проект
+npm install --save-dev eslint
+```
+
+```bash
+# Установим дополнительные пакеты, чтобы интегрировать eslint и prettier, чтобы они друг с другом не конфликтовали
+npm install --save-dev eslint-plugin-prettier eslint-config-prettier
+```
+
+Создаем конфигурационный файл `.eslintrc.json` и добавляем в него необходимые правила. За основу конфига возьмем готовый конфиг от eslint - `eslint:recommended`.
+
+Список всех доступных правил можно посмотреть [тут](https://eslint.org/docs/rules/).
+
+Чтобы исключить из проверки директории/файлы указываем их в виде списка в игнор файле .eslintignore
