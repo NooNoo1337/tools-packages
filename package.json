@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/NooNoo1337/tools-packages/issues"
   },
-  "homepage": "https://github.com/NooNoo1337/tools-packages#readme"
+  "homepage": "https://github.com/NooNoo1337/tools-packages#readme",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^8.5.1",
+    "prettier": "^2.5.1"
+  }
 }
