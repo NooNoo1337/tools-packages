@@ -2,8 +2,9 @@
 
 ## Prettier
 
+Установим prettier пакет в проект
+
 ```bash
-# Установим prettier пакет в проект
 npm install --save-dev prettier
 ```
 
@@ -25,13 +26,15 @@ npm install --save-dev prettier
 
 ## ESLint
 
+Установим eslint пакет в проект
+
 ```bash
-# Установим eslint пакет в проект
 npm install --save-dev eslint
 ```
 
+Установим дополнительные пакеты, чтобы интегрировать eslint и prettier, чтобы они друг с другом не конфликтовали
+
 ```bash
-# Установим дополнительные пакеты, чтобы интегрировать eslint и prettier, чтобы они друг с другом не конфликтовали
 npm install --save-dev eslint-plugin-prettier eslint-config-prettier
 ```
 
