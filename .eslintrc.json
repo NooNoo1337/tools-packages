@@ -11,7 +11,7 @@
     "ecmaVersion": 2020
   },
   "rules": {
-    "prettier/prettier": "error", // Обязательно!! Подсвечивает ошибки из Prettier.
+    "prettier/prettier": "error", // Обязательно! Чтобы подсвечивались ошибки форматирования.
     "camelcase": [
       "error"
     ],
