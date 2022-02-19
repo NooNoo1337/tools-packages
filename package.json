@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
     "lint:js": "eslint './src/**.js'",
-    "lint:css": "stylelint './src/**.css'"
+    "lint:css": "stylelint './src/**.css'",
+    "lint": "npm run lint:js && npm run lint:css",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
     "prettier": "^2.5.1",
     "stylelint": "^14.5.1",
     "stylelint-config-prettier": "^9.0.3",
