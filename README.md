@@ -43,3 +43,17 @@ npm install --save-dev eslint-plugin-prettier eslint-config-prettier
 Список всех доступных правил можно посмотреть [тут](https://eslint.org/docs/rules/).
 
 Чтобы исключить из проверки директории/файлы указываем их в виде списка в игнор файле .eslintignore
+
+Чтобы в дальнейшем линтеры могли автоматически исправлять несложные ошибки, нужно расширить настройки нашего VSCode
+
+```json
+"editor.codeActionsOnSave": {
+  "source.fixAll": true,
+},
+```
+
+Дополним секцию `scripts` в package.json командой для активации проверки всех js файлов
+
+```json
+"lint:js": "eslint './src/**.js'",
+```
