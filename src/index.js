@@ -2,4 +2,4 @@ const sum = () => {
     return 1 + 2
 }
 
-sum()
+module.exports = { sum }
