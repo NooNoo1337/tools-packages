@@ -1,21 +1,28 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true
-    },
-    /**
-     * Берем за основу готовый конфиг от eslint.
-     * Так же расширяем конфиг с помощью prettier, чтобы правила не конфликтовали
-     */
-    "extends": ["eslint:recommended", "prettier"],
-    "plugins": ["prettier"],
-    "parserOptions": {
-        "ecmaVersion": 2020
-    },
-    "rules": {
-        "prettier/prettier": "error", // Обязательно! Чтобы подсвечивались ошибки форматирования.
-        "camelcase": ["error"],
-        "eqeqeq": ["error", "always"]
-    }
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  /**
+  * Берем за основу готовый конфиг от eslint. 
+  * Так же расширяем конфиг с помощью prettier, чтобы правила не конфликтовали
+  */
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "prettier/prettier": "error", // Обязательно! Чтобы подсвечивались ошибки форматирования.
+    "camelcase": [
+      "error"
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ]
+  }
 }
